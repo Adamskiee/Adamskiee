@@ -1,10 +1,9 @@
 <h1 align="center">Hi, I'm Adam 👋</h1>
-<h3 align="center">IT Student | Full-Stack Developer in Progress</h3>
+<h3 align="center">IT Student</h3>
 
 <br/>
 
-- 🔭 Currently working on a **capstone project**
-- 🌱 Currently learning **React Native Expo**
+- 🌱 Currently learning **Agentic Engineering**
 - 📫 Reach me at **tosinomatthew@gmail.com**
 
 ---
