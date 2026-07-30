@@ -16,6 +16,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
+          debug: yes
           filename: github-metrics.svg
           base: header, activity, community, repositories, metadata
           plugin_languages: yes
