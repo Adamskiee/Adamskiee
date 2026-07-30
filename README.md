@@ -16,12 +16,7 @@
 ### GitHub Stats
 
 <p align="left">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Adamskiee&show_icons=true&theme=default&hide_border=true" alt="Adam's GitHub stats"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Adamskiee&layout=compact&hide_border=true" alt="Top Languages"/>
-</p>
-
-<p align="left">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Adamskiee&hide_border=true" alt="GitHub Streak"/>
+  <img src="./github-metrics.svg" alt="Adam's GitHub metrics"/>
 </p>
 
 ---
