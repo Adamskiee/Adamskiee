@@ -13,44 +13,12 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Diagnose METRICS_TOKEN git clone access
-        env:
-          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
-        run: |
-          set +e
-          echo "Token length: ${#METRICS_TOKEN}"
-          echo "--- own private repo ---"
-          git clone --single-branch "https://${METRICS_TOKEN}@github.com/Adamskiee/adamskiee-portfolio.git" /tmp/test-portfolio 2>&1
-          echo "exit: $?"
-          echo "--- external public repo (YLP-software) ---"
-          git clone --single-branch "https://${METRICS_TOKEN}@github.com/Emman-pip/YLP-software.git" /tmp/test-ylp 2>&1
-          echo "exit: $?"
-          set -e
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          debug: yes
           filename: github-metrics.svg
           base: header, activity, community, repositories, metadata
           plugin_languages: yes
           plugin_languages_analysis_timeout: 15
           plugin_languages_ignored: html, css, scss, c
-          plugin_languages_indepth: yes
-          plugin_languages_indepth_custom: >-
-            greensapot-univ-info-system/greensapot-univ-info-system,
-            sapot-admin-mobile/sapot_admin_mobile,
-            Emman-pip/YLP-software
-          plugin_languages_skipped: >-
-            Adamskiee, tmux-config, csharp-def-practice,
-            ml-restaurant-management-system, csharp-midterm-practice, timate,
-            nvim-setup, smart-inventory-sales-management-system,
-            hospital-management-system, lan-chat-app, design-patterns,
-            habit-tracker-mobile, movie-mobile-app, jira-like, test,
-            robot-car-iot, new-repo, debug, php-practice, collab-repo,
-            personal-organizer-website, bro-code-react-tutorial,
-            comprog-1styr-project, personal-blog-nodejs, unit-converter-web,
-            roadmap-npm, WebClock, calculator, recipesweb, guessbook,
-            weatherapi, todolist, LinuxPractice, HTML, PURCOMMnotes,
-            SQLNotes, WebDevNotes, UTS, GOAL, NetworkingNotes, ESNotes,
-            GitNotes, ADMS, CollectionModuleExercise, Inventory
           plugin_lines: yes
