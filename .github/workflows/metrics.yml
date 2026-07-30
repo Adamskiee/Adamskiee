@@ -13,6 +13,19 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Diagnose METRICS_TOKEN git clone access
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          set +e
+          echo "Token length: ${#METRICS_TOKEN}"
+          echo "--- own private repo ---"
+          git clone --single-branch "https://${METRICS_TOKEN}@github.com/Adamskiee/adamskiee-portfolio.git" /tmp/test-portfolio 2>&1
+          echo "exit: $?"
+          echo "--- external public repo (YLP-software) ---"
+          git clone --single-branch "https://${METRICS_TOKEN}@github.com/Emman-pip/YLP-software.git" /tmp/test-ylp 2>&1
+          echo "exit: $?"
+          set -e
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
