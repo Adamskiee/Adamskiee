@@ -11,16 +11,6 @@
 - 🤖 Exploring how **AI can enhance my development workflow**
 - 📫 Reach me at **tosinomatthew@gmail.com**
 
----
-
-### GitHub Stats
-
-<p align="left">
-  <img src="./github-metrics.svg" alt="Adam's GitHub metrics"/>
-</p>
-
----
-
 ### Connect with Me
 
 <p align="left">
