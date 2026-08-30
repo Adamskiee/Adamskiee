@@ -1,13 +1,12 @@
 <h1 align="center">Hi, I'm Adam 👋</h1>
-<h5 align="center">IT Student | Full-Stack Developer in Progress</h3>
+<h5 align="center">IT Student | Mobile Developer | Software Developer in Progress</h3>
 
 <br/>
 
 ### About Me
 
-- 🔭 Currently working on a **capstone project**
-- 💼 Building full-stack web and mobile applications
-- 💡 Passionate about **inventing solutions to real problems**
+- 🔭 Currently preparing for **OJT** for 2027
+- 💼 Building full-stack mobile applications
 - 🤖 Exploring how **AI can enhance my development workflow**
 - 📫 Reach me at **tosinomatthew@gmail.com**
 
