@@ -7,7 +7,7 @@
 
 - 🔭 Preparing for **OJT** in 2027
 - 💼 Building full-stack **mobile applications**
-- 🤖 Exploring how **AI can enhance my development workflow**
+- 🤖 Exploring **Machine Learning**
 - 📫 Reach me at **tosinomatthew@gmail.com**
 
 ### Connect with Me
